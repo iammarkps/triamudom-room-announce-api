@@ -6,7 +6,7 @@ COPY ./main.go /app
 COPY ./go.mod /app
 COPY ./go.sum /app
 RUN go mod download
-RUN CGO_ENABLED=0 GOOS=linux go build -a -installsuffix cgo -o main .
+RUN CGO_ENABLED=0 GOOS=linux go build
 
 # run in slim image
 FROM alpine:3.9

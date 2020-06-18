@@ -6,8 +6,6 @@ import (
 	"os"
 	"time"
 
-	// Redis
-	_ "github.com/gomodule/redigo/redis"
 	"github.com/jinzhu/gorm"
 
 	// SQL Dialect
