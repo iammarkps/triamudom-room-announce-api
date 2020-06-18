@@ -2,9 +2,7 @@
 FROM golang:latest AS builder
 RUN mkdir /app
 WORKDIR /app
-COPY ./main.go /app
-COPY ./go.mod /app
-COPY ./go.sum /app
+COPY . /app
 RUN go mod download
 RUN CGO_ENABLED=0 GOOS=linux go build -o main .
 
