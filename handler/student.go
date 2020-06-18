@@ -3,7 +3,7 @@ package handler
 import (
 	"net/http"
 
-	"github.com/iammarkps/tu83-announcer-api/models"
+	"github.com/iammarkps/triamudom-room-api/models"
 	"github.com/labstack/echo/v4"
 )
 
